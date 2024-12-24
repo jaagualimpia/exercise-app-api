@@ -14,3 +14,12 @@ class ExerciseData(models.Model):
     class Meta:
         managed = False
         db_table = 'exercise_data'
+
+
+class WeightData(models.Model):
+    date = models.DateField(blank=True, primary_key=True)
+    weight = models.FloatField(blank=True, null=True)
+
+    class Meta:
+        managed = False
+        db_table = 'weight_data'

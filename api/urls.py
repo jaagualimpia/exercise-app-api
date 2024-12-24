@@ -1,7 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
-from api.views import testEndpoint
+from django.urls import path
+from api.views import ExerciseDataEndpoint, WeightDataEndpoint
 
 urlpatterns = [
-    path("base", testEndpoint.as_view())
+    path("exercise", ExerciseDataEndpoint.as_view()),
+    path("weight", WeightDataEndpoint.as_view())
 ]
