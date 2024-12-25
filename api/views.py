@@ -13,6 +13,11 @@ class ExerciseDataEndpoint(APIView):
 
         return Response(serialized_data.data)
     
+    def post(self, request):
+        print(request.data)
+
+        return(Response(None,status=200))
+    
 
 class WeightDataEndpoint(APIView):
     def get(self, request):
