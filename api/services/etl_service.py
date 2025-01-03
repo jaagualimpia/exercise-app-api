@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 import unidecode 
-
+import numpy as np
 
 NAMES_EQUIVALENCE = {'bicepscurl': 'maquina bicepscurl',
 'maquina de tira multiuso': 'maquina tira multiuso',
